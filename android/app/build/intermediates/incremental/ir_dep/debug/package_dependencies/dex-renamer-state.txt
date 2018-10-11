@@ -1,0 +1,4 @@
+#Wed Oct 10 19:45:24 MST 2018
+base.0=/Users/ASUuser/Desktop/android 2/app/build/intermediates/transforms/dexMerger/debug/27
+path.0=classes.dex
+renamed.0=classes.dex
