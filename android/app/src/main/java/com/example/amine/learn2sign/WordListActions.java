@@ -9,24 +9,22 @@ import java.util.Map;
 import java.util.Random;
 
 public class WordListActions {
-    private Map<String,Integer> wordCount;
+    private Map<String,Integer> wordCount = new HashMap<String,Integer>();;
     private boolean minimumNumberOfVideosCompleted;
     private String [] wordList = {"And","About","Can","Cat","Cop","Cost","Day","Deaf","Decide","Father","Find","Go Out",
-            "Gold","Goodnight","Hearing","Here","Hospital","Hurt","If","Large","Hello","Help","Sorry","After","Tiger"};;
+            "Gold","Goodnight","Hearing","Here","Hospital","Hurt","If","Large","Hello","Help","Sorry","After","Tiger"};
     public void WordListActions(){
-        wordCount = new HashMap<String,Integer>();
         minimumNumberOfVideosCompleted = false;
-        
 
 
     }
 
     public void addWord(String word){
-        if(wordCount.containsKey(word)){
-            wordCount.put(word,wordCount.get(word) + 1);
+        if(!wordCount.containsKey(word)){
+            wordCount.put(word,1);
         }
         else{
-            wordCount.put(word,1);
+            wordCount.put(word,wordCount.get(word) + 1);
         }
     }
 
@@ -37,8 +35,8 @@ public class WordListActions {
             if((int)pair.getValue() < 3)
                 return;
         }
-        if(wordCount.size() >= 25)
-            this.minimumNumberOfVideosCompleted = true;
+        //if(wordCount.size() >= 25)
+              this.minimumNumberOfVideosCompleted = true;
 
     }
 

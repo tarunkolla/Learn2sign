@@ -135,9 +135,11 @@ public class MainActivity extends AppCompatActivity {
         bt_record_practice.setVisibility(View.GONE);
         rg_practice_learn.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
+
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(checkedId==rb_learn.getId()) {
+
                     Toast.makeText(getApplicationContext(),"Learn",Toast.LENGTH_SHORT).show();
                     vv_video_learn.setVisibility(View.VISIBLE);
                     sp_words.setVisibility(View.VISIBLE);
@@ -146,20 +148,39 @@ public class MainActivity extends AppCompatActivity {
 
                     tv_practice_random_word.setVisibility(View.GONE);
                     bt_record_practice.setVisibility(View.GONE);
-                } else if ( checkedId==rb_practice.getId()) {
-                    Toast.makeText(getApplicationContext(),"Practice",Toast.LENGTH_SHORT).show();
-                    // Things that become invisible
-                    vv_video_learn.setVisibility(View.GONE);
-                    sp_words.setVisibility(View.GONE);
-                    sp_ip_address.setVisibility(View.GONE);
-                    ll_after_video.setVisibility(View.GONE);
-                    bt_record.setVisibility(View.GONE);
+                }
+
+                else if ( checkedId==rb_practice.getId()) {
+                    if(wordListActions.returnMinimumVideos()) {
+
+                        Toast.makeText(getApplicationContext(), "Practice", Toast.LENGTH_SHORT).show();
+                        // Things that become invisible
+                        vv_video_learn.setVisibility(View.GONE);
+                        sp_words.setVisibility(View.GONE);
+                        sp_ip_address.setVisibility(View.GONE);
+                        ll_after_video.setVisibility(View.GONE);
+                        bt_record.setVisibility(View.GONE);
+
+                        tv_practice_random_word.setText(wordListActions.randomWord());
+                        tv_practice_random_word.setVisibility(View.VISIBLE);
+                        bt_record_practice.setVisibility(View.VISIBLE);
+                    }
+                    else{
+                        rb_learn.setChecked(true);
+                        rb_practice.setChecked(false);
+                        Toast.makeText(getApplicationContext(),"Please complete 3 videos for each of 25 words before proceeding to practice",Toast.LENGTH_SHORT).show();
+                        //vv_video_learn.setVisibility(View.VISIBLE);
+                        //sp_words.setVisibility(View.VISIBLE);
+                        //sp_ip_address.setVisibility(View.VISIBLE);
+                        //ll_after_video.setVisibility(View.GONE);
+
+                        //tv_practice_random_word.setVisibility(View.GONE);
+                        //bt_record_practice.setVisibility(View.GONE);
+                    }
 
 
                     // Things that become visible
-                    tv_practice_random_word.setText(wordListActions.randomWord());
-                    tv_practice_random_word.setVisibility(View.VISIBLE);
-                    bt_record_practice.setVisibility(View.VISIBLE);
+
                 } else if (checkedId == rb_grade.getId()){
                     Toast.makeText(getApplicationContext(),"Grade",Toast.LENGTH_SHORT).show();
                     vv_video_learn.setVisibility(View.GONE);
@@ -229,10 +250,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"Already Logged In",Toast.LENGTH_SHORT).show();
 
         }
-    }
-
-    public void get_random(){
-        
     }
 
     public void play_video(String text) {
@@ -359,6 +376,7 @@ public class MainActivity extends AppCompatActivity {
              t.putExtra("recordButtonId","bt_record");
              t.putExtra(INTENT_WORD,sp_words.getSelectedItem().toString());
              wordListActions.addWord(sp_words.getSelectedItem().toString());
+             wordListActions.setMinimumNumberOfVideosCompletedToTrue();
              startActivityForResult(t,9999);
 
 
