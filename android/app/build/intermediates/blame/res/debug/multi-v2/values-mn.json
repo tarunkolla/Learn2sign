@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ricky/Dropbox/Fall 2018/CS 535/android/learn2sign/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml",
+            "outputFile": "C:\\Users\\Tarun kolla\\Desktop\\CSE 535\\android-20180905T001324Z-001\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn\\values-mn.xml",
             "map": [
                 {
-                    "source": "/home/ricky/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/99ea58fa185fc92e98efbd731c93177f/res/values-mn/values-mn.xml",
+                    "source": "C:\\Users\\Tarun kolla\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0-rc01.aar\\f66d0b75019f3646d3bdadcb992acbbb\\res\\values-mn\\values-mn.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/ricky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/aaf389aef7805265a4e3cde831ee7581/res/values-mn/values-mn.xml",
+                    "source": "C:\\Users\\Tarun kolla\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc01.aar\\05af4f6b1210e8cb1c5f36b975c9086f\\res\\values-mn\\values-mn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

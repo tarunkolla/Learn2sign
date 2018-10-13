@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ricky/Dropbox/Fall 2018/CS 535/android/learn2sign/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml",
+            "outputFile": "C:\\Users\\Tarun kolla\\Desktop\\CSE 535\\android-20180905T001324Z-001\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v28\\values-v28.xml",
             "map": [
                 {
-                    "source": "/home/ricky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/aaf389aef7805265a4e3cde831ee7581/res/values-v28/values-v28.xml",
+                    "source": "C:\\Users\\Tarun kolla\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc01.aar\\05af4f6b1210e8cb1c5f36b975c9086f\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",

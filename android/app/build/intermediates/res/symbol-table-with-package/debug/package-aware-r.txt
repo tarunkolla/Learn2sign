@@ -771,9 +771,6 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
-dimen activity_horizontal_margin
-dimen activity_vertical_margin
-dimen appbar_padding_top
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -1051,7 +1048,6 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1059,19 +1055,15 @@ id add
 id alertTitle
 id all
 id always
-id appbar
 id async
 id auto
 id barrier
 id beginning
 id blocking
 id bottom
-id bt_accept
 id bt_cancel
 id bt_login
 id bt_record
-id bt_record_practice
-id bt_reject
 id bt_send
 id bt_start
 id buttonPanel
@@ -1085,7 +1077,6 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
-id constraintLayout
 id container
 id content
 id contentPanel
@@ -1111,7 +1102,6 @@ id et_id
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id fab
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1139,8 +1129,6 @@ id line3
 id listMode
 id list_item
 id ll_after_record
-id ll_after_video
-id main_content
 id masked
 id menu_logout
 id menu_upload
@@ -1170,7 +1158,6 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
-id rb_grade
 id rb_learn
 id rb_practice
 id rg_practice_learn
@@ -1197,7 +1184,6 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
-id section_label
 id select_dialog_listview
 id selected
 id shortcut
@@ -1241,7 +1227,6 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
-id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1251,7 +1236,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id tv_filename
-id tv_practice_random_word
 id tv_time
 id tv_timer
 id tv_title
@@ -1314,14 +1298,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_grade
 layout activity_login
 layout activity_main
-layout activity_main2
-layout activity_practice_actvity
 layout activity_upload
 layout activity_video
-layout content_practice_actvity
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1336,7 +1316,6 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
-layout fragment_main2
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1351,7 +1330,6 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu menu
-menu menu_main2
 menu menu_upload
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -1419,7 +1397,6 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string action_settings
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -1439,12 +1416,9 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
-string section_format
 string server_ip_address
 string status_bar_notification_info_overflow
 string title_activity_login
-string title_activity_main2
-string title_activity_practice_actvity
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

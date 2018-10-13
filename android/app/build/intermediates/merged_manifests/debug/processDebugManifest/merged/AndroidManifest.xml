@@ -44,15 +44,6 @@
         <activity
             android:name="com.example.amine.learn2sign.VideoActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.example.amine.learn2sign.GradeActivity" />
-        <activity
-            android:name="com.example.amine.learn2sign.PracticeActvity"
-            android:label="@string/title_activity_practice_actvity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.example.amine.learn2sign.Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
