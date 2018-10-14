@@ -1,7 +1,6 @@
 package com.example.amine.learn2sign;
 
 import android.Manifest;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,12 +8,11 @@ import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.os.Environment;
-import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -37,23 +35,18 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.internal.Utils;
-
-import static android.provider.MediaStore.EXTRA_DURATION_LIMIT;
-import static android.provider.MediaStore.EXTRA_MEDIA_TITLE;
-import static com.example.amine.learn2sign.LoginActivity.INTENT_EMAIL;
-import static com.example.amine.learn2sign.LoginActivity.INTENT_ID;
-import static com.example.amine.learn2sign.LoginActivity.INTENT_SERVER_ADDRESS;
-import static com.example.amine.learn2sign.LoginActivity.INTENT_URI;
-import static com.example.amine.learn2sign.LoginActivity.INTENT_WORD;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static String INTENT_ID = "INTENT_ID";
+    public static String INTENT_EMAIL = "INTENT_EMAIL";
+    public static String INTENT_WORD = "INTENT_WORD";
+    public static String INTENT_URI = "INTENT_URI";
+    public static String INTENT_SERVER_ADDRESS = "INTENT_SERVER_ADDRESS";
 
     static final int REQUEST_VIDEO_CAPTURE = 1;
 
@@ -151,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 else if ( checkedId==rb_practice.getId()) {
-                    if(wordListActions.returnMinimumVideos()) {
+                    if(wordListActions.minimumNumberOfVideosCompleted()) {
 
                         Toast.makeText(getApplicationContext(), "Practice", Toast.LENGTH_SHORT).show();
                         // Things that become invisible
@@ -189,6 +182,7 @@ public class MainActivity extends AppCompatActivity {
                     ll_after_video.setVisibility(View.VISIBLE);
                     tv_practice_random_word.setVisibility(View.GONE);
                     bt_record_practice.setVisibility(View.GONE);
+                    bt_record.setVisibility(View.GONE);
 
                 }
             }
@@ -212,7 +206,7 @@ public class MainActivity extends AppCompatActivity {
         sp_ip_address.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                sharedPreferences.edit().putString(INTENT_SERVER_ADDRESS, sp_ip_address.getSelectedItem().toString()).apply();
+                sharedPreferences.edit().putString("INTENT_SERVER_ADDRESS", sp_ip_address.getSelectedItem().toString()).apply();
             }
 
             @Override
@@ -243,8 +237,8 @@ public class MainActivity extends AppCompatActivity {
         });
         sharedPreferences =  this.getSharedPreferences(getPackageName(), Context.MODE_PRIVATE);
         Intent intent = getIntent();
-        if(intent.hasExtra(INTENT_EMAIL) && intent.hasExtra(INTENT_ID)) {
-            Toast.makeText(this,"User : " + intent.getStringExtra(INTENT_EMAIL),Toast.LENGTH_SHORT).show();
+        if(intent.hasExtra("INTENT_EMAIL") && intent.hasExtra("INTENT_ID")) {
+            Toast.makeText(this,"User : " + intent.getStringExtra("INTENT_EMAIL"),Toast.LENGTH_SHORT).show();
 
         } else {
             Toast.makeText(this,"Already Logged In",Toast.LENGTH_SHORT).show();
@@ -375,8 +369,8 @@ public class MainActivity extends AppCompatActivity {
              Intent t = new Intent(this,VideoActivity.class);
              t.putExtra("recordButtonId","bt_record");
              t.putExtra(INTENT_WORD,sp_words.getSelectedItem().toString());
-             wordListActions.addWord(sp_words.getSelectedItem().toString());
-             wordListActions.setMinimumNumberOfVideosCompletedToTrue();
+             //wordListActions.addWord(sp_words.getSelectedItem().toString());
+             //wordListActions.setMinimumNumberOfVideosCompletedToTrue();
              startActivityForResult(t,9999);
 
 
@@ -588,7 +582,7 @@ public class MainActivity extends AppCompatActivity {
         //respond to menu item selection
         switch (item.getItemId()) {
             case R.id.menu_logout:
-                if(sharedPreferences.edit().remove(INTENT_ID).commit() && sharedPreferences.edit().remove(INTENT_EMAIL).commit()) {
+                if(sharedPreferences.edit().remove("INTENT_ID").commit() && sharedPreferences.edit().remove("INTENT_EMAIL").commit()) {
                     sharedPreferences.edit().putInt(getString(R.string.logout), sharedPreferences.getInt(getString(R.string.logout),0)+1).apply();
                     startActivity(new Intent(this, LoginActivity.class));
                     this.finish();
