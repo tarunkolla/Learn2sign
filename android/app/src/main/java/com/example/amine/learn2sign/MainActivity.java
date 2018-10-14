@@ -1,7 +1,6 @@
 package com.example.amine.learn2sign;
 
 import android.Manifest;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,12 +8,11 @@ import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.os.Environment;
-import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -37,15 +35,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.internal.Utils;
 
-import static android.provider.MediaStore.EXTRA_DURATION_LIMIT;
-import static android.provider.MediaStore.EXTRA_MEDIA_TITLE;
 import static com.example.amine.learn2sign.LoginActivity.INTENT_EMAIL;
 import static com.example.amine.learn2sign.LoginActivity.INTENT_ID;
 import static com.example.amine.learn2sign.LoginActivity.INTENT_SERVER_ADDRESS;
@@ -53,9 +47,11 @@ import static com.example.amine.learn2sign.LoginActivity.INTENT_URI;
 import static com.example.amine.learn2sign.LoginActivity.INTENT_WORD;
 
 public class MainActivity extends AppCompatActivity {
-
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     static final int REQUEST_VIDEO_CAPTURE = 1;
+    LoggingUtil logger;
+    //LoggingUtil logger = new LoggingUtil(this.getClass());
 
     @BindView(R.id.rg_practice_learn)
     RadioGroup rg_practice_learn;
@@ -115,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
     WordListActions wordListActions = new WordListActions();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -122,17 +119,21 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         Stetho.initializeWithDefaults(this);
 
-
-
-
-
-
         rb_learn.setChecked(true);
         bt_cancel.setVisibility(View.GONE);
         bt_send.setVisibility(View.GONE);
         ll_after_video.setVisibility(View.GONE);
         tv_practice_random_word.setVisibility(View.GONE);
         bt_record_practice.setVisibility(View.GONE);
+
+        try {
+            this.checkWritePermission();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        logger = new LoggingUtil(this.getClass());
+
         rg_practice_learn.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
 
@@ -140,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(checkedId==rb_learn.getId()) {
 
+                    logger.logClick("Radio Button",rb_learn.getText().toString());
                     Toast.makeText(getApplicationContext(),"Learn",Toast.LENGTH_SHORT).show();
                     vv_video_learn.setVisibility(View.VISIBLE);
                     sp_words.setVisibility(View.VISIBLE);
@@ -153,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
                 else if ( checkedId==rb_practice.getId()) {
                     if(wordListActions.returnMinimumVideos()) {
 
+                        logger.logClick("Radio Button",rb_practice.getText().toString());
                         Toast.makeText(getApplicationContext(), "Practice", Toast.LENGTH_SHORT).show();
                         // Things that become invisible
                         vv_video_learn.setVisibility(View.GONE);
@@ -166,6 +169,7 @@ public class MainActivity extends AppCompatActivity {
                         bt_record_practice.setVisibility(View.VISIBLE);
                     }
                     else{
+
                         rb_learn.setChecked(true);
                         rb_practice.setChecked(false);
                         Toast.makeText(getApplicationContext(),"Please complete 3 videos for each of 25 words before proceeding to practice",Toast.LENGTH_SHORT).show();
@@ -182,6 +186,8 @@ public class MainActivity extends AppCompatActivity {
                     // Things that become visible
 
                 } else if (checkedId == rb_grade.getId()){
+
+                    logger.logClick("Radio Button",rb_grade.getText().toString());
                     Toast.makeText(getApplicationContext(),"Grade",Toast.LENGTH_SHORT).show();
                     vv_video_learn.setVisibility(View.GONE);
                     sp_words.setVisibility(View.GONE);
@@ -199,6 +205,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String text = sp_words.getSelectedItem().toString();
                 if(!old_text.equals(text)) {
+
+                    logger.logClick("Spinner Item",text);
                     path = "";
                     play_video(text);
                 }
@@ -249,6 +257,37 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this,"Already Logged In",Toast.LENGTH_SHORT).show();
 
+        }
+        System.out.println("func ius " + TAG);
+    }
+
+    public void checkWritePermission() throws IOException {
+
+        if ( ContextCompat.checkSelfPermission(this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED ) {
+
+            // Permission is not granted
+            // Should we show an explanation?
+
+
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+
+                // Show an explanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+            } else {
+                // No explanation needed; request the permission
+                Log.i("Just Print",Environment.getExternalStorageDirectory().toString());
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                        100);
+
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
         }
     }
 
