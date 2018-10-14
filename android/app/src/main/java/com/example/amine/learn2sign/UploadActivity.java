@@ -1,14 +1,9 @@
 package com.example.amine.learn2sign;
 
-import android.content.ContentResolver;
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.AsyncTask;
+import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -23,27 +18,25 @@ import android.widget.Toast;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
-import com.loopj.android.http.ResponseHandlerInterface;
 
-import java.io.DataOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cz.msebera.android.httpclient.Header;
-import cz.msebera.android.httpclient.HttpResponse;
 
-import static com.example.amine.learn2sign.LoginActivity.INTENT_ID;
-import static com.example.amine.learn2sign.LoginActivity.INTENT_SERVER_ADDRESS;
+
+//import static com.example.amine.learn2sign.LoginActivity.INTENT_ID;
+//import static com.example.amine.learn2sign.LoginActivity.INTENT_SERVER_ADDRESS;
 
 public class UploadActivity extends AppCompatActivity {
 
+    public static String INTENT_ID = "INTENT_ID";
+    public static String INTENT_EMAIL = "INTENT_EMAIL";
+    public static String INTENT_WORD = "INTENT_WORD";
+    public static String INTENT_URI = "INTENT_URI";
+    public static String INTENT_SERVER_ADDRESS = "INTENT_SERVER_ADDRESS";
     @BindView(R.id.rv_videos)
     RecyclerView rv_videos;
     @BindView(R.id.tv_filename)
@@ -51,6 +44,7 @@ public class UploadActivity extends AppCompatActivity {
     @BindView(R.id.pb_progress)
     ProgressBar progressBar;
     UploadListAdapter uploadListAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,8 +58,14 @@ public class UploadActivity extends AppCompatActivity {
         if(m.exists()) {
             if(m.isDirectory()) {
                 File[] videos =  m.listFiles();
-                for(int i=0;i<videos.length;i++) {
-                    Log.d("msg",videos[i].getPath());
+                try {
+                    for (int i = 0; i < videos.length; i++) {
+                        String path = videos[i].getPath();
+                        Log.d("msg", path);
+                    }
+                }
+                catch(NullPointerException e){
+
                 }
             }
         }
@@ -81,39 +81,42 @@ public class UploadActivity extends AppCompatActivity {
         return true;
     }
     public boolean onOptionsItemSelected(MenuItem item) {
-        String id = getSharedPreferences(getPackageName(), Context.MODE_PRIVATE).getString(INTENT_ID,"00000000");
+        String id = getSharedPreferences(getPackageName(), Context.MODE_PRIVATE).getString("INTENT_ID","00000000");
 
         //respond to menu item selection
         switch (item.getItemId()) {
             case R.id.menu_upload:
+                String server_ip = getSharedPreferences(this.getPackageName(), Context.MODE_PRIVATE).getString(INTENT_SERVER_ADDRESS, "10.211.17.171");
                 //upload to Server now
                 File[] toUpload = uploadListAdapter.getVideos();
                 boolean[] checked = uploadListAdapter.getChecked();
-                String server_ip = getSharedPreferences(this.getPackageName(), Context.MODE_PRIVATE).getString(INTENT_SERVER_ADDRESS,"10.211.17.171");
-                Log.d("msg",server_ip);
-                for(int i=0;i<checked.length;i++) {
-                    RequestParams params = new RequestParams();
-                    if(checked[i]) {
-                        params.put("checked",1);
-                    } else {
-                        params.put("checked",0);
-                    }
+                if(uploadListAdapter.minimumConditionAchieved()) {
+
+                    Log.d("msg", server_ip);
+                    for (int i = 0; i < checked.length; i++) {
+                        RequestParams params = new RequestParams();
+                        if (checked[i]) {
+                            params.put("checked", 1);
+                        } else {
+                            params.put("checked", 0);
+                        }
                         try {
                             params.put("uploaded_file", toUpload[i]);
-                            params.put("id",id);
+                            params.put("id", id);
 
-                        } catch(FileNotFoundException e) {}
+                        } catch (FileNotFoundException e) {
+                        }
 
 
                         // send request
                         AsyncHttpClient client = new AsyncHttpClient();
 
-                        client.post("http://"+server_ip +"/upload_video.php", params, new AsyncHttpResponseHandler() {
+                        client.post("http://" + server_ip + "/upload_video.php", params, new AsyncHttpResponseHandler() {
                             @Override
                             public void onSuccess(int statusCode, Header[] headers, byte[] bytes) {
                                 // handle success response
-                                Log.e("msg success",statusCode+"");
-                                if(statusCode==200)
+                                Log.e("msg success", statusCode + "");
+                                if (statusCode == 200)
                                     Toast.makeText(UploadActivity.this, "Success", Toast.LENGTH_SHORT).show();
                                 else
                                     Toast.makeText(UploadActivity.this, "Failed", Toast.LENGTH_SHORT).show();
@@ -123,7 +126,7 @@ public class UploadActivity extends AppCompatActivity {
                             @Override
                             public void onFailure(int statusCode, Header[] headers, byte[] bytes, Throwable throwable) {
                                 // handle failure response
-                                Log.e("msg fail",statusCode+"");
+                                Log.e("msg fail", statusCode + "");
 
                                 Toast.makeText(UploadActivity.this, "Something Went Wrong", Toast.LENGTH_SHORT).show();
 
@@ -157,9 +160,12 @@ public class UploadActivity extends AppCompatActivity {
                         UploadFile uploadFile = new UploadFile();
                         uploadFile.execute(uploadListAdapter.getVideos()[i].getPath());*/
 
+                    }
+                    Toast.makeText(this, "Upload to Server", Toast.LENGTH_LONG).show();
                 }
-                Toast.makeText(this,"Upload to Server", Toast.LENGTH_LONG).show();
-
+                else{
+                    Toast.makeText(this, "Please select 3 videos for each of 25 signs", Toast.LENGTH_LONG).show();
+                }
 
                 File n = new File(getFilesDir().getPath());
                 File f = new File(n.getParent()+"/shared_prefs/" + getPackageName() +".xml");

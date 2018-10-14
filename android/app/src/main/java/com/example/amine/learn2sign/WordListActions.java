@@ -1,10 +1,7 @@
 package com.example.amine.learn2sign;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
@@ -14,8 +11,6 @@ public class WordListActions {
     private String [] wordList = {"And","About","Can","Cat","Cop","Cost","Day","Deaf","Decide","Father","Find","Go Out",
             "Gold","Goodnight","Hearing","Here","Hospital","Hurt","If","Large","Hello","Help","Sorry","After","Tiger"};
     public void WordListActions(){
-        minimumNumberOfVideosCompleted = false;
-
 
     }
 
@@ -28,20 +23,18 @@ public class WordListActions {
         }
     }
 
-    public void setMinimumNumberOfVideosCompletedToTrue(){
+    public boolean minimumNumberOfVideosCompleted(){
         Iterator it = wordCount.entrySet().iterator();
         while(it.hasNext()){
             Map.Entry pair = (Map.Entry)it.next();
             if((int)pair.getValue() < 3)
-                return;
+                return false;
         }
+        if(wordCount.size() < 1)
+            return false;
+
+        return true;
         //if(wordCount.size() >= 25)
-              this.minimumNumberOfVideosCompleted = true;
-
-    }
-
-    public boolean returnMinimumVideos(){
-        return minimumNumberOfVideosCompleted;
     }
 
     public String randomWord(){
