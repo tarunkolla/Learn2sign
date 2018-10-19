@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
     static final int REQUEST_VIDEO_CAPTURE = 1;
-    LoggingUtil logger;
+    LoggingUtil logger = null;
     //LoggingUtil logger = new LoggingUtil(this.getClass());
 
     @BindView(R.id.rg_practice_learn)
@@ -220,6 +220,8 @@ public class MainActivity extends AppCompatActivity {
         sp_ip_address.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                logger.logClick("Spinner Element",sp_ip_address.getSelectedItem().toString());
                 sharedPreferences.edit().putString(INTENT_SERVER_ADDRESS, sp_ip_address.getSelectedItem().toString()).apply();
             }
 
@@ -374,9 +376,9 @@ public class MainActivity extends AppCompatActivity {
                          new String[]{Manifest.permission.CAMERA},
                          101);
 
-                 // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
-                 // app-defined int constant. The callback method gets the
-                 // result of the request.
+                 // constant. The callback method gets the
+                 // result of the requeMY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                 //                 // app-defined int st.
              }
          }
 
@@ -502,10 +504,6 @@ public class MainActivity extends AppCompatActivity {
             t.putExtra("recordButtonId","bt_record_practice");
             t.putExtra(INTENT_WORD,sp_words.getSelectedItem().toString());
             startActivityForResult(t,9999);
-
-
-
-
 
  /*           File m = new File(Environment.getExternalStorageDirectory().getPath() + "/Learn2Sign");
             if(!m.exists()) {
