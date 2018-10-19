@@ -1,4 +1,4 @@
-#Tue Oct 09 15:56:55 MST 2018
-base.0=C\:\\Users\\Tarun kolla\\Desktop\\CSE 535\\android-20180905T001324Z-001\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+#Thu Oct 18 22:06:58 MST 2018
+base.0=/Users/ASUuser/Desktop/learn2sign/android/app/build/intermediates/transforms/dexMerger/debug/6
 path.0=classes.dex
 renamed.0=classes.dex

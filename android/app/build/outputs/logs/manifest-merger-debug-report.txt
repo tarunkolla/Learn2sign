@@ -1,221 +1,241 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:2:1-39:12
-MERGED from [com.android.support:design:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc01.aar\8167881ff39069099a5a3a6acdfe2986\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-rc01.aar\05af4f6b1210e8cb1c5f36b975c9086f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\d3044643030684c373180c83ad3c7292\AndroidManifest.xml:2:1-11:12
-MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\ec88f1523f75ff8aff56bcb36e19c033\AndroidManifest.xml:2:1-7:12
-MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\stetho-1.5.0.aar\67b9e27b749a5fcc0af97ff9dcfbbea5\AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:support-fragment:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-rc01.aar\3153640f78a5a1384880639135ab80ca\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-rc01.aar\13806c0f61f6cd171810c8a0993fefc9\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-rc01.aar\6f29ecd47138736672fd2495f3e9d9cb\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-rc01.aar\003d7ab3d4c1ce6d1266aafa0cc73c9b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-rc01.aar\57da7bbae36532d57c0f30216edf4766\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-rc01.aar\d584277b0b50a4446cfd99088c523b70\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-rc01.aar\6fec307fa2807cf2ae5e47af29ab2f25\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-rc01.aar\532d20a0fec8dfadd2c8a38c8ffb6475\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-rc01.aar\7e0919524cb642ba60147fcf64f9f3cb\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-rc01.aar\958f79706eec8b4cca28b953ce23ef0f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-rc01.aar\84af23c58308ecea98fbc92fd002f5f6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-rc01.aar\ec2ae795856aa33dca7810139241958f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-rc01.aar\24068bfdc8902a32b51b07d411ae4ab3\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-rc01.aar\69f11d403408af9020abb2d0daf17fb8\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-rc01.aar\cb1810e011fbee65a80ee21061683e34\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc01.aar\f66d0b75019f3646d3bdadcb992acbbb\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc01.aar\01f8eb0d1b95cdc6bb3933fc5f6865fe\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-rc01.aar\8ed1971ac0aec2d458b46b3dc1d58a1d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0-rc01.aar\d955126d63d32810587833a95d27ce11\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-rc01.aar\7ddc5c3c8f6597686667e9939a326c99\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-rc01.aar\4b848d601e51f0d0b114c2f0bc00b2b7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\print-28.0.0-rc01.aar\8c1b37c57de89855e7561b11b15bff8c\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\ca343d08187a34b2fd81d0cb953e9acb\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-rc01.aar\2024bd480bc3e457f696b0d051de1c83\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\1ea071ef938ed67d6d2b9ba505a99542\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3a3b1fb07fbf46716a448ecca4ba9df9\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e92d2d9aefaa98ffff18a54dbc88f14d\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:2:1-49:12
+MERGED from [com.android.support:design:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/b6fdc6cc7787445096c98a409fb0c37e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/afddf2e22ec5bc6da826dbbab4d5d0a4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/0527dab74eb692703e8bc5c04cb2f40a/AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/c626fd7fa2a572df3b797837d8ed1e00/AndroidManifest.xml:2:1-7:12
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/d4a99ce08d1dc9cbaa738b665f9f60e5/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:support-fragment:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc01.aar/68210d13eb23b866b6570ae1b479e926/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc01.aar/6bbe3d99ac393071a6491173764617a2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc01.aar/6e5f2d1344d02ab86692310f954af083/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc01.aar/2f5fa0d7a498192c65a6b78e84ab1036/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc01.aar/d4a3b0e42f0d68d65af2f3bcfe6b2fed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc01.aar/819c01564b33ecd369ef20e84b725997/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc01.aar/5003bfb3b19efadfdad1dc679c19674f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc01.aar/9262fc1e4517d2180e21e312b6d0d81e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc01.aar/7ec6c9b6f4f3348cfc5a47a953fc3036/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc01.aar/59974c98f66a0113594166bf3145974e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc01.aar/e98a56c46a28b7064a47068538a1bc0f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc01.aar/c7fea1d8d6114c4759260f6b1dc1a236/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc01.aar/a363c861575c8f1cdc4d0bc9af32d2a7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc01.aar/41c77120542e42de148394e2ce2d674d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc01.aar/9ccfcba74036927da9e764ba1e83e0e0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/153cd0cb2d04610351a16a4ebe80c8fe/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/70901962aabca0d972dc6597e204b3ac/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc01.aar/3927fa0328cb454b6050cce19dd17c5b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc01.aar/59d1ee69cc97af2b39662a6fd00d7f8d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc01.aar/3690f83d913627c26ea0bcbcb65e88b1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc01.aar/43b7cec8405534589f30f9d5f63bf576/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc01.aar/e635288bf496acf57576f23615bc4055/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/4003813f87a9a88423f56c416dcb860a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc01.aar/950859e714e30aa21954d71ac5f3a9cb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/515d8d606f57b64b57d00610cab0cbd3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ee2c78c90388ba0ae833fa61d5198e62/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0c471d30ca024c32032fbf5948b7f9d1/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:2:1-49:12
 	package
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:3:5-43
-		INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:3:5-43
+		INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:2:1-39:12
-		INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:2:1-49:12
+		INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:2:1-39:12
-		INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:2:1-49:12
+		INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:2:11-69
 uses-feature#android.hardware.camera
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:5:5-7:35
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:5:5-7:35
 	android:required
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:7:9-32
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:7:9-32
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:6:9-47
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:6:9-47
 uses-feature#android.hardware.camera.autofocus
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:8:5-70
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:8:5-70
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:8:19-67
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:8:19-67
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:10:5-81
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:10:22-78
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:10:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:11:5-80
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:11:22-77
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:11:22-77
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:12:5-67
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:12:5-67
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:12:22-64
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:12:22-64
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:13:5-64
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:13:5-65
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:13:22-62
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:13:22-62
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:14:5-70
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:14:5-71
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:14:22-68
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:14:22-68
 application
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:16:5-37:19
-MERGED from [com.android.support:design:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc01.aar\8167881ff39069099a5a3a6acdfe2986\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc01.aar\8167881ff39069099a5a3a6acdfe2986\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\d3044643030684c373180c83ad3c7292\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\d3044643030684c373180c83ad3c7292\AndroidManifest.xml:9:5-20
-MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\stetho-1.5.0.aar\67b9e27b749a5fcc0af97ff9dcfbbea5\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\stetho-1.5.0.aar\67b9e27b749a5fcc0af97ff9dcfbbea5\AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:support-compat:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc01.aar\f66d0b75019f3646d3bdadcb992acbbb\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc01.aar\f66d0b75019f3646d3bdadcb992acbbb\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc01.aar\01f8eb0d1b95cdc6bb3933fc5f6865fe\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc01.aar\01f8eb0d1b95cdc6bb3933fc5f6865fe\AndroidManifest.xml:22:5-23:19
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:16:5-47:19
+MERGED from [com.android.support:design:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/b6fdc6cc7787445096c98a409fb0c37e/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/b6fdc6cc7787445096c98a409fb0c37e/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/0527dab74eb692703e8bc5c04cb2f40a/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/0527dab74eb692703e8bc5c04cb2f40a/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/d4a99ce08d1dc9cbaa738b665f9f60e5/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/d4a99ce08d1dc9cbaa738b665f9f60e5/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/153cd0cb2d04610351a16a4ebe80c8fe/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/153cd0cb2d04610351a16a4ebe80c8fe/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/70901962aabca0d972dc6597e204b3ac/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/70901962aabca0d972dc6597e204b3ac/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc01.aar\f66d0b75019f3646d3bdadcb992acbbb\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/153cd0cb2d04610351a16a4ebe80c8fe/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:19:9-41
 	android:roundIcon
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:20:9-54
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:20:9-54
 	android:icon
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:18:9-43
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:18:9-43
 	android:allowBackup
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:22:9-40
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:22:9-40
 activity#com.example.amine.learn2sign.MainActivity
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:23:9-50
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:23:9-50
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:23:19-47
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:23:19-47
 activity#com.example.amine.learn2sign.LoginActivity
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:24:9-33:20
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:24:9-33:20
 	android:label
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:26:13-45
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:26:13-45
 	android:theme
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:27:13-56
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:27:13-56
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:25:13-42
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:25:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:31:27-74
 activity#com.example.amine.learn2sign.UploadActivity
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:34:9-52
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:34:9-52
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:34:19-49
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:34:19-49
 activity#com.example.amine.learn2sign.VideoActivity
-ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:35:9-36:61
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:35:9-37:52
 	android:screenOrientation
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:36:13-49
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:37:13-49
 	android:name
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml:35:19-48
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:36:13-42
+activity#com.example.amine.learn2sign.GradeActivity
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:38:9-51
+	android:name
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:38:19-48
+activity#com.example.amine.learn2sign.PracticeActvity
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:39:9-42:59
+	android:label
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:41:13-68
+	android:theme
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:42:13-56
+	android:name
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:40:13-44
+activity#com.example.amine.learn2sign.Main2Activity
+ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:43:9-46:68
+	android:label
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:45:13-57
+	android:theme
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:46:13-56
+	android:name
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml:44:13-42
 uses-sdk
-INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:design:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc01.aar\8167881ff39069099a5a3a6acdfe2986\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc01.aar\8167881ff39069099a5a3a6acdfe2986\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-rc01.aar\05af4f6b1210e8cb1c5f36b975c9086f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-rc01.aar\05af4f6b1210e8cb1c5f36b975c9086f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\d3044643030684c373180c83ad3c7292\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\d3044643030684c373180c83ad3c7292\AndroidManifest.xml:5:5-7:41
-MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\ec88f1523f75ff8aff56bcb36e19c033\AndroidManifest.xml:5:5-43
-MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\ec88f1523f75ff8aff56bcb36e19c033\AndroidManifest.xml:5:5-43
-MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\stetho-1.5.0.aar\67b9e27b749a5fcc0af97ff9dcfbbea5\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\stetho-1.5.0.aar\67b9e27b749a5fcc0af97ff9dcfbbea5\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-fragment:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-rc01.aar\3153640f78a5a1384880639135ab80ca\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-rc01.aar\3153640f78a5a1384880639135ab80ca\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-rc01.aar\13806c0f61f6cd171810c8a0993fefc9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-rc01.aar\13806c0f61f6cd171810c8a0993fefc9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-rc01.aar\6f29ecd47138736672fd2495f3e9d9cb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-rc01.aar\6f29ecd47138736672fd2495f3e9d9cb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-rc01.aar\003d7ab3d4c1ce6d1266aafa0cc73c9b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-rc01.aar\003d7ab3d4c1ce6d1266aafa0cc73c9b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-rc01.aar\57da7bbae36532d57c0f30216edf4766\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-rc01.aar\57da7bbae36532d57c0f30216edf4766\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-rc01.aar\d584277b0b50a4446cfd99088c523b70\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-rc01.aar\d584277b0b50a4446cfd99088c523b70\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-rc01.aar\6fec307fa2807cf2ae5e47af29ab2f25\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-rc01.aar\6fec307fa2807cf2ae5e47af29ab2f25\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-rc01.aar\532d20a0fec8dfadd2c8a38c8ffb6475\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-rc01.aar\532d20a0fec8dfadd2c8a38c8ffb6475\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-rc01.aar\7e0919524cb642ba60147fcf64f9f3cb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-rc01.aar\7e0919524cb642ba60147fcf64f9f3cb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-rc01.aar\958f79706eec8b4cca28b953ce23ef0f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-rc01.aar\958f79706eec8b4cca28b953ce23ef0f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-rc01.aar\84af23c58308ecea98fbc92fd002f5f6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-rc01.aar\84af23c58308ecea98fbc92fd002f5f6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-rc01.aar\ec2ae795856aa33dca7810139241958f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-rc01.aar\ec2ae795856aa33dca7810139241958f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-rc01.aar\24068bfdc8902a32b51b07d411ae4ab3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-rc01.aar\24068bfdc8902a32b51b07d411ae4ab3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-rc01.aar\69f11d403408af9020abb2d0daf17fb8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-rc01.aar\69f11d403408af9020abb2d0daf17fb8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-rc01.aar\cb1810e011fbee65a80ee21061683e34\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-rc01.aar\cb1810e011fbee65a80ee21061683e34\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc01.aar\f66d0b75019f3646d3bdadcb992acbbb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc01.aar\f66d0b75019f3646d3bdadcb992acbbb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc01.aar\01f8eb0d1b95cdc6bb3933fc5f6865fe\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc01.aar\01f8eb0d1b95cdc6bb3933fc5f6865fe\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-rc01.aar\8ed1971ac0aec2d458b46b3dc1d58a1d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-rc01.aar\8ed1971ac0aec2d458b46b3dc1d58a1d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0-rc01.aar\d955126d63d32810587833a95d27ce11\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0-rc01.aar\d955126d63d32810587833a95d27ce11\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-rc01.aar\7ddc5c3c8f6597686667e9939a326c99\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-rc01.aar\7ddc5c3c8f6597686667e9939a326c99\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-rc01.aar\4b848d601e51f0d0b114c2f0bc00b2b7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-rc01.aar\4b848d601e51f0d0b114c2f0bc00b2b7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\print-28.0.0-rc01.aar\8c1b37c57de89855e7561b11b15bff8c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\print-28.0.0-rc01.aar\8c1b37c57de89855e7561b11b15bff8c\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\ca343d08187a34b2fd81d0cb953e9acb\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\ca343d08187a34b2fd81d0cb953e9acb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-rc01.aar\2024bd480bc3e457f696b0d051de1c83\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0-rc01] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-rc01.aar\2024bd480bc3e457f696b0d051de1c83\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\1ea071ef938ed67d6d2b9ba505a99542\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\1ea071ef938ed67d6d2b9ba505a99542\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3a3b1fb07fbf46716a448ecca4ba9df9\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3a3b1fb07fbf46716a448ecca4ba9df9\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e92d2d9aefaa98ffff18a54dbc88f14d\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Tarun kolla\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e92d2d9aefaa98ffff18a54dbc88f14d\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
+INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/b6fdc6cc7787445096c98a409fb0c37e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/b6fdc6cc7787445096c98a409fb0c37e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/afddf2e22ec5bc6da826dbbab4d5d0a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/afddf2e22ec5bc6da826dbbab4d5d0a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/0527dab74eb692703e8bc5c04cb2f40a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/0527dab74eb692703e8bc5c04cb2f40a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/c626fd7fa2a572df3b797837d8ed1e00/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/c626fd7fa2a572df3b797837d8ed1e00/AndroidManifest.xml:5:5-43
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/d4a99ce08d1dc9cbaa738b665f9f60e5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/d4a99ce08d1dc9cbaa738b665f9f60e5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc01.aar/68210d13eb23b866b6570ae1b479e926/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc01.aar/68210d13eb23b866b6570ae1b479e926/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc01.aar/6bbe3d99ac393071a6491173764617a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc01.aar/6bbe3d99ac393071a6491173764617a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc01.aar/6e5f2d1344d02ab86692310f954af083/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc01.aar/6e5f2d1344d02ab86692310f954af083/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc01.aar/2f5fa0d7a498192c65a6b78e84ab1036/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc01.aar/2f5fa0d7a498192c65a6b78e84ab1036/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc01.aar/d4a3b0e42f0d68d65af2f3bcfe6b2fed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc01.aar/d4a3b0e42f0d68d65af2f3bcfe6b2fed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc01.aar/819c01564b33ecd369ef20e84b725997/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc01.aar/819c01564b33ecd369ef20e84b725997/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc01.aar/5003bfb3b19efadfdad1dc679c19674f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc01.aar/5003bfb3b19efadfdad1dc679c19674f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc01.aar/9262fc1e4517d2180e21e312b6d0d81e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc01.aar/9262fc1e4517d2180e21e312b6d0d81e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc01.aar/7ec6c9b6f4f3348cfc5a47a953fc3036/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc01.aar/7ec6c9b6f4f3348cfc5a47a953fc3036/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc01.aar/59974c98f66a0113594166bf3145974e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc01.aar/59974c98f66a0113594166bf3145974e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc01.aar/e98a56c46a28b7064a47068538a1bc0f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc01.aar/e98a56c46a28b7064a47068538a1bc0f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc01.aar/c7fea1d8d6114c4759260f6b1dc1a236/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc01.aar/c7fea1d8d6114c4759260f6b1dc1a236/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc01.aar/a363c861575c8f1cdc4d0bc9af32d2a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc01.aar/a363c861575c8f1cdc4d0bc9af32d2a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc01.aar/41c77120542e42de148394e2ce2d674d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc01.aar/41c77120542e42de148394e2ce2d674d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc01.aar/9ccfcba74036927da9e764ba1e83e0e0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc01.aar/9ccfcba74036927da9e764ba1e83e0e0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/153cd0cb2d04610351a16a4ebe80c8fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/153cd0cb2d04610351a16a4ebe80c8fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/70901962aabca0d972dc6597e204b3ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/70901962aabca0d972dc6597e204b3ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc01.aar/3927fa0328cb454b6050cce19dd17c5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc01.aar/3927fa0328cb454b6050cce19dd17c5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc01.aar/59d1ee69cc97af2b39662a6fd00d7f8d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc01.aar/59d1ee69cc97af2b39662a6fd00d7f8d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc01.aar/3690f83d913627c26ea0bcbcb65e88b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc01.aar/3690f83d913627c26ea0bcbcb65e88b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc01.aar/43b7cec8405534589f30f9d5f63bf576/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc01.aar/43b7cec8405534589f30f9d5f63bf576/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc01.aar/e635288bf496acf57576f23615bc4055/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc01.aar/e635288bf496acf57576f23615bc4055/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/4003813f87a9a88423f56c416dcb860a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/4003813f87a9a88423f56c416dcb860a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc01.aar/950859e714e30aa21954d71ac5f3a9cb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc01] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc01.aar/950859e714e30aa21954d71ac5f3a9cb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/515d8d606f57b64b57d00610cab0cbd3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/515d8d606f57b64b57d00610cab0cbd3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ee2c78c90388ba0ae833fa61d5198e62/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ee2c78c90388ba0ae833fa61d5198e62/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0c471d30ca024c32032fbf5948b7f9d1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/ASUuser/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0c471d30ca024c32032fbf5948b7f9d1/AndroidManifest.xml:20:5-44
+INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Tarun kolla\Desktop\CSE 535\android-20180905T001324Z-001\android\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ASUuser/Desktop/learn2sign/android/app/src/main/AndroidManifest.xml
