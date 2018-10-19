@@ -6,6 +6,8 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import de.mindpipe.android.logging.log4j.LogConfigurator;
 
@@ -13,11 +15,18 @@ public class LoggingUtil{
 
     private Logger logger;
 
-    public LoggingUtil(Class cls){
+    public LoggingUtil(){
+        logger = null;
+    }
 
-        //this.checkExternalStorageWritePermission()
+    public Logger getLogger(Class cls){
+
         final LogConfigurator logConfigurator = new LogConfigurator();
-        logConfigurator.setFileName(Environment.getExternalStorageDirectory().toString() + File.separator + "Learn2Sign/log/file.log");
+
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        String time = format.format(new Date());
+
+        logConfigurator.setFileName(Environment.getExternalStorageDirectory().toString() + File.separator + "Learn2Sign/log/logfile-"+time+".log");
         logConfigurator.setRootLevel(Level.ALL);
         logConfigurator.setLevel("org.apache", Level.ALL);
         logConfigurator.setUseFileAppender(true);
@@ -26,10 +35,15 @@ public class LoggingUtil{
         logConfigurator.setImmediateFlush(true);
         logConfigurator.configure();
         logger = Logger.getLogger(cls);
+
+        return logger;
     }
 
     public void logClick(String elementType, String elementText){
 
+        if(logger == null){
+            return;
+        }
         logger.info("Click Event : "+elementType+" - "+elementText);
     }
 

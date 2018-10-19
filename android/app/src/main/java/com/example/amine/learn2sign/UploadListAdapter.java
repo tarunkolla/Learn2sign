@@ -3,31 +3,26 @@ package com.example.amine.learn2sign;
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.net.Uri;
-import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.VideoView;
 
-import org.w3c.dom.Text;
-
 import java.io.File;
-
-import butterknife.ButterKnife;
 
 public class UploadListAdapter extends RecyclerView.Adapter<UploadListAdapter.ViewHolder>
 {
     private File[] videos;
     Context context;
     private boolean[] checked;
+
+    public WordListActions wordListActions = new WordListActions();
     public UploadListAdapter(File[] videos, Context context){
         this.videos = videos;
         this.context = context;
@@ -80,6 +75,21 @@ public class UploadListAdapter extends RecyclerView.Adapter<UploadListAdapter.Vi
     @Override
     public int getItemCount() {
         return videos.length;
+    }
+
+    public boolean minimumConditionAchieved(){
+        for(int i=0;i<videos.length;i++) {
+
+            if(checked[i]){
+                String path = videos[i].getPath();
+                int start = path.indexOf("practice_") + 9;
+                String [] sub = path.substring(start).split("_");
+                wordListActions.addWord(sub[0]);
+            }
+        }
+
+        return wordListActions.minimumNumberOfVideosCompleted();
+
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
