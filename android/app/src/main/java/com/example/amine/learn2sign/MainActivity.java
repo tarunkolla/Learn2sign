@@ -77,17 +77,18 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.bt_record)
     Button bt_record;
 
+    @BindView(R.id.bt_reject)
+    Button bt_reject;
+
     @BindView(R.id.bt_send)
     Button bt_send;
+
+    @BindView(R.id.bt_proceed)
+    Button bt_proceed;
 
     @BindView(R.id.bt_cancel)
     Button bt_cancel;
 
-    @BindView(R.id.bt_accept)
-    Button bt_accept;
-
-    @BindView(R.id.bt_reject)
-    Button bt_reject;
 
     @BindView(R.id.ll_after_record)
     LinearLayout ll_after_record;
@@ -118,10 +119,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        bt_proceed.setVisibility(View.GONE);
 
         rb_learn.setChecked(true);
         bt_cancel.setVisibility(View.GONE);
+        bt_reject.setVisibility(View.GONE);
         bt_send.setVisibility(View.GONE);
         ll_after_video.setVisibility(View.GONE);
         tv_practice_random_word.setVisibility(View.GONE);
@@ -137,26 +139,39 @@ public class MainActivity extends AppCompatActivity {
                     vv_video_learn.setVisibility(View.VISIBLE);
                     sp_words.setVisibility(View.VISIBLE);
                     sp_ip_address.setVisibility(View.VISIBLE);
+                    bt_reject.setVisibility(View.GONE);
                     ll_after_video.setVisibility(View.GONE);
+                    bt_record.setVisibility(View.VISIBLE);
+                    bt_cancel.setVisibility(View.GONE);
+                    bt_send.setVisibility(View.GONE);
+
+
 
                     tv_practice_random_word.setVisibility(View.GONE);
                     bt_record_practice.setVisibility(View.GONE);
+                    bt_proceed.setVisibility(View.GONE);
                 }
 
                 else if ( checkedId==rb_practice.getId()) {
-                    if(wordListActions.minimumNumberOfVideosCompleted()) {
-
+                    //if(wordListActions.minimumNumberOfVideosCompleted()) {
+                    if(1+1==2){
                         Toast.makeText(getApplicationContext(), "Practice", Toast.LENGTH_SHORT).show();
                         // Things that become invisible
                         vv_video_learn.setVisibility(View.GONE);
+                        bt_proceed.setVisibility(View.GONE);
                         sp_words.setVisibility(View.GONE);
+                        bt_cancel.setVisibility(View.GONE);
                         sp_ip_address.setVisibility(View.GONE);
                         ll_after_video.setVisibility(View.GONE);
                         bt_record.setVisibility(View.GONE);
+                        ll_after_record.setVisibility(View.GONE);
+
+
 
                         tv_practice_random_word.setText(wordListActions.randomWord());
                         tv_practice_random_word.setVisibility(View.VISIBLE);
                         bt_record_practice.setVisibility(View.VISIBLE);
+
                     }
                     else{
                         rb_learn.setChecked(true);
@@ -175,14 +190,21 @@ public class MainActivity extends AppCompatActivity {
                     // Things that become visible
 
                 } else if (checkedId == rb_grade.getId()){
+
                     Toast.makeText(getApplicationContext(),"Grade",Toast.LENGTH_SHORT).show();
-                    vv_video_learn.setVisibility(View.GONE);
+                    bt_proceed.setVisibility(View.GONE);
+                    vv_video_learn.setVisibility(View.VISIBLE);
+                    bt_reject.setVisibility(View.GONE);
+                    bt_cancel.setVisibility(View.GONE);
+                    vv_record.setVisibility(View.VISIBLE);
                     sp_words.setVisibility(View.GONE);
                     sp_ip_address.setVisibility(View.GONE);
                     ll_after_video.setVisibility(View.VISIBLE);
                     tv_practice_random_word.setVisibility(View.GONE);
                     bt_record_practice.setVisibility(View.GONE);
                     bt_record.setVisibility(View.GONE);
+                    bt_reject.setVisibility(View.VISIBLE);
+
 
                 }
             }
@@ -308,7 +330,10 @@ public class MainActivity extends AppCompatActivity {
     }
     @OnClick(R.id.bt_record)
     public void record_video() {
-
+        bt_cancel.setText("CANCEL");
+        bt_send.setText("PROCEED");
+        bt_send.setVisibility(View.VISIBLE);
+        vv_video_learn.setVisibility(View.GONE);
 
 
          if( ContextCompat.checkSelfPermission(this,
@@ -392,9 +417,33 @@ public class MainActivity extends AppCompatActivity {
             }*/
         }
     }
+    @OnClick(R.id.bt_proceed)
+    public void goToGrade(){
+        Toast.makeText(getApplicationContext(),"Grade",Toast.LENGTH_SHORT).show();
+        bt_proceed.setVisibility(View.GONE);
+        bt_send.setText("ACCEPT");
+        bt_send.setVisibility(View.VISIBLE);
+
+        sp_words.setVisibility(View.GONE);
+        sp_ip_address.setVisibility(View.GONE);
+        ll_after_video.setVisibility(View.VISIBLE);
+        tv_practice_random_word.setVisibility(View.GONE);
+
+        vv_record.setVisibility(View.GONE);
+        play_video(tv_practice_random_word.getText().toString());
+        vv_video_learn.setVisibility(View.VISIBLE);
+        bt_record_practice.setVisibility(View.GONE);
+        bt_record.setVisibility(View.GONE);
+        //rb_grade.setSelected(true);
+        rb_grade.performClick();
+
+    }
 
     @OnClick(R.id.bt_record_practice)
     public void record_practice_video() {
+        bt_send.setText("PROCEED");
+        bt_cancel.setText("CANCEL");
+        ll_after_record.setVisibility(View.VISIBLE);
 
 
 
@@ -455,7 +504,8 @@ public class MainActivity extends AppCompatActivity {
             }
             Intent t = new Intent(this,VideoActivity.class);
             t.putExtra("recordButtonId","bt_record_practice");
-            t.putExtra(INTENT_WORD,sp_words.getSelectedItem().toString());
+
+            t.putExtra(INTENT_WORD,tv_practice_random_word.getText());
             startActivityForResult(t,9999);
 
 
@@ -490,15 +540,37 @@ public class MainActivity extends AppCompatActivity {
         if(rb_learn.isSelected()) {
             vv_video_learn.setVisibility(View.VISIBLE);
         }
-        bt_record.setVisibility(View.VISIBLE);
+        bt_record.setVisibility(View.GONE);
         bt_send.setVisibility(View.GONE);
         bt_cancel.setVisibility(View.GONE);
-
+        bt_record_practice.setVisibility(View.VISIBLE);
+        tv_practice_random_word.setVisibility(View.VISIBLE);
         sp_words.setEnabled(true);
-
+        bt_proceed.setVisibility(View.GONE);
         rb_learn.setEnabled(true);
         rb_practice.setEnabled(true);
         rb_grade.setEnabled(true);
+
+    }
+
+
+    @OnClick(R.id.bt_reject)
+    public void reject() {
+        vv_record.setVisibility(View.GONE);
+        if(rb_learn.isSelected()) {
+            vv_video_learn.setVisibility(View.VISIBLE);
+        }
+       /* bt_record.setVisibility(View.GONE);
+        bt_send.setVisibility(View.GONE);
+        bt_cancel.setVisibility(View.GONE);
+        bt_record_practice.setVisibility(View.VISIBLE);
+        tv_practice_random_word.setVisibility(View.VISIBLE);
+        sp_words.setEnabled(true);
+        bt_proceed.setVisibility(View.GONE);
+        rb_learn.setEnabled(true);
+        rb_practice.setEnabled(true);
+        rb_grade.setEnabled(true); */
+       rb_practice.performClick();
 
     }
 
@@ -510,15 +582,18 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode==9999 && resultCode == 8888) {
             if(intent.hasExtra(INTENT_URI)) {
                 returnedURI = intent.getStringExtra(INTENT_URI);
-
+                bt_proceed.setVisibility(View.VISIBLE);
                 vv_record.setVisibility(View.VISIBLE);
                 bt_record.setVisibility(View.GONE);
-                bt_send.setVisibility(View.VISIBLE);
+                bt_record_practice.setVisibility(View.GONE);
+                tv_practice_random_word.setVisibility(View.GONE);
+                bt_send.setVisibility(View.GONE);
                 bt_cancel.setVisibility(View.VISIBLE);
                 sp_words.setEnabled(false);
-                rb_learn.setEnabled(false);
-                rb_practice.setEnabled(false);
-                rb_grade.setEnabled(false);
+                rb_learn.setEnabled(true);
+                rb_practice.setEnabled(true);
+                rb_grade.setEnabled(true);
+                bt_reject.setVisibility(View.GONE);
                 vv_record.setVideoURI(Uri.parse(returnedURI));
                 sharedPreferences.edit().putInt("recorded_"+sp_words.getSelectedItem().toString(), sharedPreferences.getInt("recorded_"+sp_words.getSelectedItem().toString(),0)+1).apply();
 

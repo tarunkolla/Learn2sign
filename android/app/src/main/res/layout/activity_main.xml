@@ -46,6 +46,8 @@
                 android:textSize="20sp"/>
 
 
+
+
         </RadioGroup>
 
         <Spinner
@@ -111,10 +113,20 @@
                 android:text="Proceed" />
 
             <Button
+                android:id="@+id/bt_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proceed" />
+            <Button
                 android:id="@+id/bt_cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cancel" />
+            <Button
+                android:id="@+id/bt_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reject" />
         </LinearLayout>
 
 
@@ -127,18 +139,7 @@
             android:layout_margin="10dp"
             android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/bt_accept"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Accept" />
-
-            <Button
-                android:id="@+id/bt_reject"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reject" />
-    </LinearLayout>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/tv_practice_random_word"
@@ -147,6 +148,8 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:text="TextView" />
+
+
         <Button
             android:id="@+id/bt_record_practice"
             android:layout_width="wrap_content"
@@ -154,5 +157,12 @@
             android:layout_gravity="center"
             android:layout_margin="30dp"
             android:text="Record" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
     </LinearLayout>
 </ScrollView>
