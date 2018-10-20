@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
     public static String INTENT_SERVER_ADDRESS = "INTENT_SERVER_ADDRESS";
 
     static final int REQUEST_VIDEO_CAPTURE = 1;
+    LoggingUtil logger = null;
+    //LoggingUtil logger = new LoggingUtil(this.getClass());
 
     @BindView(R.id.rg_practice_learn)
     RadioGroup rg_practice_learn;
@@ -109,18 +111,14 @@ public class MainActivity extends AppCompatActivity {
     WordListActions wordListActions = new WordListActions();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         //bind xml to activity
         ButterKnife.bind(this);
         Stetho.initializeWithDefaults(this);
-
-
-
-
         bt_proceed.setVisibility(View.GONE);
-
         rb_learn.setChecked(true);
         bt_cancel.setVisibility(View.GONE);
         bt_reject.setVisibility(View.GONE);
@@ -128,13 +126,22 @@ public class MainActivity extends AppCompatActivity {
         ll_after_video.setVisibility(View.GONE);
         tv_practice_random_word.setVisibility(View.GONE);
         bt_record_practice.setVisibility(View.GONE);
+
+        logger = new LoggingUtil();
+
+        try {
+            this.checkWritePermissionForLogging();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         rg_practice_learn.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
-
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(checkedId==rb_learn.getId()) {
 
+                    logger.logClick("Radio Button",rb_learn.getText().toString());
                     Toast.makeText(getApplicationContext(),"Learn",Toast.LENGTH_SHORT).show();
                     vv_video_learn.setVisibility(View.VISIBLE);
                     sp_words.setVisibility(View.VISIBLE);
@@ -146,15 +153,18 @@ public class MainActivity extends AppCompatActivity {
                     bt_send.setVisibility(View.GONE);
 
 
-
+                    vv_record.setVisibility(View.GONE);
                     tv_practice_random_word.setVisibility(View.GONE);
                     bt_record_practice.setVisibility(View.GONE);
                     bt_proceed.setVisibility(View.GONE);
                 }
 
                 else if ( checkedId==rb_practice.getId()) {
+
+                    logger.logClick("Radio Button",rb_practice.getText().toString());
                     //if(wordListActions.minimumNumberOfVideosCompleted()) {
                     if(1+1==2){
+
                         Toast.makeText(getApplicationContext(), "Practice", Toast.LENGTH_SHORT).show();
                         // Things that become invisible
                         vv_video_learn.setVisibility(View.GONE);
@@ -174,6 +184,7 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                     else{
+
                         rb_learn.setChecked(true);
                         rb_practice.setChecked(false);
                         Toast.makeText(getApplicationContext(),"Please complete 3 videos for each of 25 words before proceeding to practice",Toast.LENGTH_SHORT).show();
@@ -191,6 +202,8 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if (checkedId == rb_grade.getId()){
 
+
+                    logger.logClick("Radio Button",rb_grade.getText().toString());
                     Toast.makeText(getApplicationContext(),"Grade",Toast.LENGTH_SHORT).show();
                     bt_proceed.setVisibility(View.GONE);
                     vv_video_learn.setVisibility(View.VISIBLE);
@@ -215,6 +228,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String text = sp_words.getSelectedItem().toString();
                 if(!old_text.equals(text)) {
+
+                    logger.logClick("Word Spinner Element - Spinner Item - ",text);
                     path = "";
                     play_video(text);
                 }
@@ -228,7 +243,9 @@ public class MainActivity extends AppCompatActivity {
         sp_ip_address.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                sharedPreferences.edit().putString("INTENT_SERVER_ADDRESS", sp_ip_address.getSelectedItem().toString()).apply();
+                logger.logClick("IP Address Spinner Element - Spinner Item - ",sp_ip_address.getSelectedItem().toString());
+                sharedPreferences.edit().putString(INTENT_SERVER_ADDRESS, sp_ip_address.getSelectedItem().toString()).apply();
+
             }
 
             @Override
@@ -265,6 +282,39 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this,"Already Logged In",Toast.LENGTH_SHORT).show();
 
+        }
+    }
+
+    public void checkWritePermissionForLogging() throws IOException {
+
+        if ( ContextCompat.checkSelfPermission(this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED ) {
+
+            // Permission is not granted
+            // Should we show an explanation?
+
+
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+
+                // Show an explanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+            } else {
+                // No explanation needed; request the permission
+                Log.i("Just Print",Environment.getExternalStorageDirectory().toString());
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                        100);
+
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
+        }else{
+
+            logger.getLogger(this.getClass());
         }
     }
 
@@ -330,6 +380,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @OnClick(R.id.bt_record)
     public void record_video() {
+        logger.logClick("Button",bt_record.getText().toString());
         bt_cancel.setText("CANCEL");
         bt_send.setText("PROCEED");
         bt_send.setVisibility(View.VISIBLE);
@@ -354,9 +405,9 @@ public class MainActivity extends AppCompatActivity {
                          new String[]{Manifest.permission.CAMERA},
                          101);
 
-                 // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
-                 // app-defined int constant. The callback method gets the
-                 // result of the request.
+                 // constant. The callback method gets the
+                 // result of the requeMY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                 //                 // app-defined int st.
              }
          }
 
@@ -387,6 +438,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             // Permission has already been granted
+
              File f = new File(Environment.getExternalStorageDirectory(), "Learn2Sign");
              if (!f.exists()) {
                  f.mkdirs();
@@ -419,6 +471,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @OnClick(R.id.bt_proceed)
     public void goToGrade(){
+        logger.logClick("Button",bt_proceed.getText().toString());
         Toast.makeText(getApplicationContext(),"Grade",Toast.LENGTH_SHORT).show();
         bt_proceed.setVisibility(View.GONE);
         bt_send.setText("ACCEPT");
@@ -441,6 +494,8 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.bt_record_practice)
     public void record_practice_video() {
+
+        logger.logClick("Button",bt_record_practice.getText().toString());
         bt_send.setText("PROCEED");
         bt_cancel.setText("CANCEL");
         ll_after_record.setVisibility(View.VISIBLE);
@@ -508,10 +563,6 @@ public class MainActivity extends AppCompatActivity {
             t.putExtra(INTENT_WORD,tv_practice_random_word.getText());
             startActivityForResult(t,9999);
 
-
-
-
-
  /*           File m = new File(Environment.getExternalStorageDirectory().getPath() + "/Learn2Sign");
             if(!m.exists()) {
                 if(m.mkdir()) {
@@ -529,6 +580,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @OnClick(R.id.bt_send)
     public void sendToServer() {
+        logger.logClick("Button",bt_send.getText().toString());
         Toast.makeText(this,"Send to Server",Toast.LENGTH_SHORT).show();
         Intent t = new Intent(this,UploadActivity.class);
         startActivity(t);
@@ -536,6 +588,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.bt_cancel)
     public void cancel() {
+        logger.logClick("Button",bt_cancel.getText().toString());
         vv_record.setVisibility(View.GONE);
         if(rb_learn.isSelected()) {
             vv_video_learn.setVisibility(View.VISIBLE);
@@ -556,6 +609,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.bt_reject)
     public void reject() {
+        logger.logClick("Button",bt_reject.getText().toString());
         vv_record.setVisibility(View.GONE);
         if(rb_learn.isSelected()) {
             vv_video_learn.setVisibility(View.VISIBLE);
