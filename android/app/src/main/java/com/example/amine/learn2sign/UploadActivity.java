@@ -15,6 +15,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -32,6 +33,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class UploadActivity extends AppCompatActivity {
 
+
     public static String INTENT_ID = "INTENT_ID";
     public static String INTENT_EMAIL = "INTENT_EMAIL";
     public static String INTENT_WORD = "INTENT_WORD";
@@ -42,8 +44,12 @@ public class UploadActivity extends AppCompatActivity {
     @BindView(R.id.tv_filename)
     TextView tv_filename;
     @BindView(R.id.pb_progress)
+
     ProgressBar progressBar;
+
+
     UploadListAdapter uploadListAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

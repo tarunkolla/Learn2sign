@@ -143,10 +143,12 @@
 
         <TextView
             android:id="@+id/tv_practice_random_word"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
             android:text="TextView" />
 
 
@@ -156,6 +158,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="30dp"
+
             android:text="Record" />
 
         <VideoView

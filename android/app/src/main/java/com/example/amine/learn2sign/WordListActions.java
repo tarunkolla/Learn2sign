@@ -30,7 +30,7 @@ public class WordListActions {
             if((int)pair.getValue() < 3)
                 return false;
         }
-        if(wordCount.size() < 1)
+        if(wordCount.size() < 25)
             return false;
 
         return true;

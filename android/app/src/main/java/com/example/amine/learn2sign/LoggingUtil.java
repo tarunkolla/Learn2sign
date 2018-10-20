@@ -26,7 +26,7 @@ public class LoggingUtil{
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         String time = format.format(new Date());
 
-        logConfigurator.setFileName(Environment.getExternalStorageDirectory().toString() + File.separator + "Learn2Sign/log/logfile-"+time+".log");
+        logConfigurator.setFileName(Environment.getExternalStorageDirectory().toString() + File.separator + " log/logfile-"+time+".log");
         logConfigurator.setRootLevel(Level.ALL);
         logConfigurator.setLevel("org.apache", Level.ALL);
         logConfigurator.setUseFileAppender(true);

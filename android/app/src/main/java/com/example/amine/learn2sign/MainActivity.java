@@ -207,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Grade",Toast.LENGTH_SHORT).show();
                     bt_proceed.setVisibility(View.GONE);
                     vv_video_learn.setVisibility(View.VISIBLE);
-                    bt_reject.setVisibility(View.GONE);
+
                     bt_cancel.setVisibility(View.GONE);
                     vv_record.setVisibility(View.VISIBLE);
                     sp_words.setVisibility(View.GONE);
@@ -484,7 +484,7 @@ public class MainActivity extends AppCompatActivity {
 
         vv_record.setVisibility(View.GONE);
         play_video(tv_practice_random_word.getText().toString());
-        vv_video_learn.setVisibility(View.VISIBLE);
+        vv_video_learn.setVisibility(View.GONE);
         bt_record_practice.setVisibility(View.GONE);
         bt_record.setVisibility(View.GONE);
         //rb_grade.setSelected(true);

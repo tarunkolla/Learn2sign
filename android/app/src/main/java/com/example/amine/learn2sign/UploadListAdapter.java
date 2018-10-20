@@ -55,7 +55,7 @@ public class UploadListAdapter extends RecyclerView.Adapter<UploadListAdapter.Vi
 
             String filename=videos[i].getPath().substring(videos[i].getPath().lastIndexOf("/")+1);
             viewHolder.tv_title.setText(filename);
-            Log.e("msg",viewHolder.ischecked+"");
+            //Log.e("msg",viewHolder.ischecked+"");
             if(checked[i]) {
                 checked[i] = true;
                 viewHolder.cb_check.setChecked(true);
